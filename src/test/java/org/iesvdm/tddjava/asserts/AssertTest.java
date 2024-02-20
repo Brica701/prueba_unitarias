@@ -10,6 +10,38 @@ import java.util.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 
+/**
+<p>
+ Assert Descripción
+ </p>
+ <p>
+ <b>fail</b> Falla una prueba con un mensaje y/o excepción determinados
+ </p> <p>
+ <b>assertTrue</b> Afirma que una condición proporcionada es verdadera
+ </p> <p>
+ <b>assertFalse</b> Afirma que una condición proporcionada es falsa
+ </p> <p>
+ <b>assertNull</b> Afirma que un objeto proporcionado es nulo
+ </p> <p>
+ <b>assertNotNull</b> Afirma que un objeto proporcionado no es nulo
+ </p> <p>
+ <b>assertEquals</b>Afirma que dos objetos suministrados son iguales
+ </p> <p>
+ <b>assertArrayEquals</b> Afirma que dos matrices suministradas son iguales
+ </p> <p>
+ <b>assertIterableEquals</b> Afirma que dos objetos iterables son profundamente iguales
+ </p> <p>
+ <b>assertLinesMatch</b> Afirma que dos listas de cadenas son iguales
+ </p> <p>
+ <b>assertNotEquals</b> Afirma que dos objetos suministrados no son iguales
+ </p> <p>
+ <b>assertSame</b> Afirma que dos objetos son iguales, comparados con ==
+ </p> <p>
+ <b>assertNotSame</b> Afirma que dos objetos son diferentes, comparados con !=
+ </p>
+
+ */
+
 
 public class AssertTest {
 
