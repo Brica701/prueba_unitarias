@@ -1,5 +1,6 @@
 package org.iesvdm.tddjava.ship;
 
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.util.ArrayList;
@@ -23,11 +24,11 @@ public class PlanetSpec {
     }
 
     public void whenInstantiatedThenMaxIsSet() {
-
+        Assert.assertEquals(planet.getMax(), max, "El punto máximo no se estableció correctamente en la instancia de Planet.");
     }
 
     public void whenInstantiatedThenObstaclesAreSet() {
-
+        Assert.assertEquals(planet.getObstacles(), obstacles, "Los obstáculos no se establecieron correctamente en la instancia de Planet.");
     }
 
 }

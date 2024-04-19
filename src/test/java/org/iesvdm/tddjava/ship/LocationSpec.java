@@ -25,7 +25,7 @@ public class LocationSpec {
     }
 
     public void whenInstantiatedThenXIsStored() {
-
+        assertEquals(direction, location.getDirection());
     }
 
     public void whenInstantiatedThenYIsStored() {
@@ -38,6 +38,9 @@ public class LocationSpec {
 
     public void givenDirectionNWhenForwardThenYDecreases() {
 
+        location.setDirection(Direction.NORTH);
+        location.forward(max, obstacles);
+        assertEquals(y - 1, location.getY());
     }
 
     public void givenDirectionSWhenForwardThenYIncreases() {
@@ -112,11 +115,9 @@ public class LocationSpec {
     }
 
     public void givenDirectionWAndXEquals1WhenForwardThenMaxX() {
-
     }
 
     public void givenDirectionNAndYEquals1WhenForwardThenMaxY() {
-
     }
 
     public void givenDirectionSAndYEqualsMaxYWhenForwardThen1() {
@@ -125,9 +126,11 @@ public class LocationSpec {
 
     public void givenObstacleWhenForwardThenReturnFalse() {
 
+
     }
 
     public void givenObstacleWhenBackwardThenReturnFalse() {
+
 
     }
 
